@@ -3,7 +3,7 @@
 <body>
     <ul>
         {% for usuario in usuarios %}
-            <li> Apellido= {{usuarios.apellido}}, Nombre= {{usuarios.nombre}} {{usuarios.segundo_nombre}} </li>
+            <li> Apellido= {{usuario.apellido}}, Nombre= {{usuario.nombre}} <!--{{usuario.segundo_nombre}}{{usuario.dni}} --> </li>
         {% endfor %}
     </ul>
 </body>

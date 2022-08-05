@@ -13,9 +13,13 @@ def registros(request):
     if request.GET:
         context['nombre'] = request.GET["nombre"]
         context['segundo_nombre'] = request.GET["segundo_nombre"]
-        context['apellido'] = request.GET["apellido"]   
+        context['apellido'] = request.GET["apellido"]  
+        context['mail'] = request.GET['mail']
+        context['celular'] = request.GET['celular']
+        context['obrasocial'] = request.GET['obrasocial']
+
          
-    return render(request, "ClinicaCoder/registro-usuarios.html", context) 
+    return render(request, "ClinicaCoder/registro-usuarios.html", {}) 
 
 def usuarios_registrados(request):
     context = {}

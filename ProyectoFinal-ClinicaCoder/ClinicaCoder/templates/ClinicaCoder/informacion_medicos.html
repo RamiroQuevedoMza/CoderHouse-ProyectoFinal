@@ -1,13 +1,15 @@
 {% extends "ClinicaCoder/base.html" %}
 {% block main %}
 <body>
-    <p>Nombre del medico = <i>{{medicos.nombre}}</i></p>
-    <p>Apellido del medico = <i>{{medicos.apellido}}</i></p>
-    <p>Edad del medico = <i>{{medicos.edad}}</i></p>
-    <p>Especialidad = <i>{{medicos.especialidad}}</i></p>
+    <p>Nombre: <i>{{medicos.nombre}}</i></p>
+    <p>Apellido: <i>{{medicos.apellido}}</i></p>
+    <p>Telefono: <i>{{celular}}</i></p>
+    <p>Edad: <i>{{medicos.edad}}</i></p>
+    <p>Especialidad: <i>{{medicos.especialidad}}</i></p>
 
-    <p>
+    <p> <a href= "{% url "editar_medicos" medicos.id %}">Editar Informacion</a>
+        <a href= "{% url "borrar_medicos" medicos.id %}">Borrar</a>
         <a href="{% url "lista_medicos" %}">Regresar</a>
     </p>
-</body>
+
 {% endblock %}

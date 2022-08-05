@@ -2,24 +2,34 @@
 {% block main %}
 </head>
 <body>
-    Competar con sus datos para generar el Registro:
-    <form action="" method="get">
+   <h2> Competar con sus datos para generar el Registro: </h2>
+      <form action="" method="get">
         <label for="nombre">Nombre</label>
-        <input type="text" name="nombre">
+        <input type="text" name="nombre"> </form>
 
+      <form action="" method="get">
         <label for="segundo_nombre">Segundo Nombre</label>
-        <input type="text" name="segundo_nombre">
+        <input type="text" name="segundo_nombre"> </form>
 
-        <label for="apellido">Apellido</label>
-        <input type="text" name="apellido">
+      <form action="" method="get">
+         <label for="apellido">Apellido</label>
+         <input type="text" name="apellido"> </form>
+
+      <form action="" method="get">
+         <label for="mail">E-mail</label>
+         <input type="text" name="mail"> </form>
+
+      <form action="" method="get">
+            <label for="celular">celular</label>
+            <input type="text" name="celular"> </form>
+
+      <form action="" method="get">
+            <label for="obrasocial">ObraSocial</label>
+            <input type="text" name="obrasocial"> </form>
 
         <button type="submit">Enviar</button>
-     </form>
+     
 
-     <h2>Confirma que sus datos:
-        {{nombre}} {{apellido}}
-        Son correctos?
-     </h2>
 </body>
 </html>
 {% endblock %}
