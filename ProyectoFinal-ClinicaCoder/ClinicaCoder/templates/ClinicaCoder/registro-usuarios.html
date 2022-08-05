@@ -1,0 +1,25 @@
+{% extends "ClinicaCoder/base.html" %}
+{% block main %}
+</head>
+<body>
+    Competar con sus datos para generar el Registro:
+    <form action="" method="get">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre">
+
+        <label for="segundo_nombre">Segundo Nombre</label>
+        <input type="text" name="segundo_nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido">
+
+        <button type="submit">Enviar</button>
+     </form>
+
+     <h2>Confirma que sus datos:
+        {{nombre}} {{apellido}}
+        Son correctos?
+     </h2>
+</body>
+</html>
+{% endblock %}

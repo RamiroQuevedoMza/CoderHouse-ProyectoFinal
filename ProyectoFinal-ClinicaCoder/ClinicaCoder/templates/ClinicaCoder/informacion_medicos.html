@@ -1,0 +1,13 @@
+{% extends "ClinicaCoder/base.html" %}
+{% block main %}
+<body>
+    <p>Nombre del medico = <i>{{medicos.nombre}}</i></p>
+    <p>Apellido del medico = <i>{{medicos.apellido}}</i></p>
+    <p>Edad del medico = <i>{{medicos.edad}}</i></p>
+    <p>Especialidad = <i>{{medicos.especialidad}}</i></p>
+
+    <p>
+        <a href="{% url "lista_medicos" %}">Regresar</a>
+    </p>
+</body>
+{% endblock %}

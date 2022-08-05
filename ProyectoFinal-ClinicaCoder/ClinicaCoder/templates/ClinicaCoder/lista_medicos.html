@@ -1,0 +1,19 @@
+{% extends "ClinicaCoder/base.html" %}
+{% block main %}
+<body>
+    <h1>Medicos de la ClinicaCoder</h1>
+    <ul>
+        {% for medicos in object_list %}
+            <li>
+                <p> Nombre: {{ medicos.nombre }} </p>
+                <p>
+                <a href= "{% url "info_medicos" medicos.id %}">Ver</a>
+                <a href= "{% url "editar_medicos" medicos.id %}">Editar</a>
+                <a href= "{% url "borrar_medicos" medicos.id %}">Borrar</a>
+                </p>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href= "{% url "crear_medicos" %}">Añadir un nuevo medico</a>
+</body>
+{% endblock %}
