@@ -19,7 +19,7 @@ class Usuarios(models.Model):
 class Medicos(models.Model):
     nombre = models.CharField(max_length=40)
     apellido = models.CharField(max_length=40)
-    celular = models.IntegerField(max_length=10)
+    #celular = models.IntegerField(max_length=10)
     edad = models.IntegerField(max_length=40)
     especialidad = models.CharField(max_length=40)
 

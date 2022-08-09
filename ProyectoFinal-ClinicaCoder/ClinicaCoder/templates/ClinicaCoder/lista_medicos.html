@@ -5,7 +5,7 @@
     <ul>
         {% for medicos in object_list %}
             <li>
-                <p> {{medicos.apellido}}, {{medicos.nombre}} </p>
+                <p> {{medicos.apellido}} {{medicos.nombre}} </p>
                 <p>
                 <a href= "{% url "info_medicos" medicos.id %}">Ver</a>
                 </p>
